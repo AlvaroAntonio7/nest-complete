@@ -14,7 +14,7 @@ import { PostsModule } from './posts/posts.module';
     password: '1234',
     database: 'nestDB',
     entities: [__dirname + '/**/*.entity{.ts,.js}'],//esta notacion indica cualquier archivo que tenga la extencion entity
-    synchronize: true, //indica que los cambios se reflejen en la BD // para produccion es mejor usar una migracion
+    synchronize: false, //indica que los cambios se reflejen en la BD // para produccion es mejor usar una migracion
   }),
     UsersModule,
     PostsModule],
